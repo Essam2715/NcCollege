@@ -443,22 +443,8 @@ nav.navbar.navbar-expand-lg.navbar-dark.main-nav{
   z-index: 3;
 
 }
-@media (max-width:500px){
-  .pos-f-t{
-    left: 0;
-    width:100%;
-    position: relative;
-  }
-  nav.navbar.navbar-expand-lg.navbar-dark.main-nav{
-    position:relative;
-    top: 0;
-    left: 0;
-    width: 100%;
-    z-index: 3;
 
-  }
 
-}
   
   .main-nav{
       background-color: #212121;
@@ -1392,11 +1378,11 @@ padding: 50px 20px;
 scroll-behavior: smooth
 }
 .baton button{
-border-radius: 50%;
+/* border-radius: 50%;
 -webkit-border-radius: 50%;
 -moz-border-radius: 50%;
 -ms-border-radius: 50%;
--o-border-radius: 50%;
+-o-border-radius: 50%; */
 text-align: center;
 outline: none;
 color: #fff;
@@ -1422,4 +1408,29 @@ position: relative;
     margin-left: 70px;
 
   }
+}
+@media (max-width:1000px){
+  .pos-f-t{
+    width: 33%;
+  }
+  .navbar-toggler.collapsed{
+    margin-top: 50px;
+  }
+}
+@media (max-width:500px){
+  .pos-f-t{
+    left: 0;
+    width:100%;
+    position: relative;
+  }
+  nav.navbar.navbar-expand-lg.navbar-dark.main-nav{
+    position:relative;
+    top: 0;
+    left: 0;
+    width: 100%;
+    z-index: 3;
+
+  }
+  
+
 }
